@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="AXENT — thoughtful everyday objects, made to keep.">
+  <title>AXENT — Objects for every day</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">A little more thoughtful. A little less ordinary.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="AXENT home"><span class="brand-mark">a</span> AXENT</a>
+    <nav aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our idea</a><a href="#footer">Contact</a></nav>
+    <button class="cart-trigger" id="openCart" aria-label="Open basket">Basket <span id="cartCount">0</span></button>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> THE AXENT EDIT · NO. 01</p>
+        <h1>Everyday,<br><em>with intention.</em></h1>
+        <p class="hero-text">Useful little things. Considered details. Made to bring a bit more joy to the everyday.</p>
+        <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span>✳</span> A small collection of good things</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of AXENT everyday objects" role="img">
+        <div class="sun-orbit"></div><div class="poster-label">OBJECTS<br>FOR EVERY DAY</div>
+        <div class="art-cup"><div class="cup-handle"></div><div class="cup-shine"></div><span>A</span></div>
+        <div class="art-book"><div class="book-lines"></div><span>MAKE<br>SPACE<br>FOR GOOD.</span></div>
+        <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
+        <div class="art-pedestal"></div><div class="art-shadow"></div>
+        <div class="art-stamp">AXENT<br>STUDIO · 01</div>
+      </div>
+    </section>
+
+    <section class="intro-strip" id="story"><span>MADE FOR REAL LIFE</span><span class="strip-star">✳</span><span>GOOD DESIGN, NO FUSS</span><span class="strip-star">✳</span><span>THE LITTLE DETAILS MATTER</span></section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE FIRST COLLECTION</p><h2>Meet the everyday.</h2></div><p>Four easy favourites.<br>Plenty of room to make them yours.</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+    <section class="quote-band"><span class="quote-spark">✳</span><p>“The best things are the ones<br>you reach for every day.”</p><span class="quote-byline">A LITTLE AXENT WISDOM</span></section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top"><div><a class="wordmark footer-brand" href="#top"><span class="brand-mark">a</span> AXENT</a><p>Thoughtful things for ordinary days.</p></div><div class="footer-links"><a href="mailto:contact@axent.example">Email the grown-up running AXENT</a><a href="terms.html">Terms of service</a><a href="mailto:contact@axent.example?subject=AXENT%20privacy%20question">Privacy question</a></div></div>
+    <div class="footer-top"><div><a class="wordmark footer-brand" href="#top"><span class="brand-mark">a</span> AXENT</a><p>Thoughtful things for ordinary days.</p></div><div class="footer-links"><a href="mailto:axent.cards@gmail.com">Email the grown-up running AXENT</a><a href="terms.html">Terms of service</a><a href="mailto:axent.cards@gmail.com?subject=AXENT%20privacy%20question">Privacy question</a></div></div>
+    <div class="footer-bottom"><span>© 2026 AXENT · A shop project</span><span>Made with a little imagination <b>✳</b></span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your basket" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR LITTLE SELECTION</p><h2>Your basket <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Close basket">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="empty-cart" id="emptyCart"><span>✳</span><p>Your basket is waiting<br>for something lovely.</p><button class="text-button" id="keepShopping">Keep exploring ↗</button></div>
+    <div class="drawer-bottom"><div class="total-row"><span>Subtotal</span><strong id="subtotal">£0.00</strong></div><p class="shipping-note">Delivery details are sorted by the grown-up running the shop.</p><button class="button button-dark checkout-button" id="checkout">Continue to checkout <span>↗</span></button><p class="demo-note">Demo shop · payments are not switched on yet.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
